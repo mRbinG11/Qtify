@@ -20,9 +20,13 @@ body {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   background-color: var(--color-black);
-  columns: var(--color-white);
+  color: var(--color-white);
   overflow-x: hidden;
+}
+
+.swiper-slide {
+  width: auto !important;
 }
