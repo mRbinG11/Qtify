@@ -6,6 +6,7 @@ const Card = ({ data, type }) => {
   const getCard = (type) => {
     switch (type) {
       case "album": {
+        // eslint-disable-next-line no-unused-vars
         const { image, follows, title, songs } = data;
         return (
           <div className={styles.wrapper}>
