@@ -8,7 +8,6 @@ import "swiper/css";
 const Carousel = ({ data, componentRender }) => {
   const Controls = ({ data }) => {
     const swiper = useSwiper();
-    console.log(swiper);
     useEffect(() => {
       swiper.slideTo(0, null);
       // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .toggleText {
   cursor: pointer;
   color: var(--color-primary);
-  margin-right: 5px;
 }
 
 .cardWrapper {
