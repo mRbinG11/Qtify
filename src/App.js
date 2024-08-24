@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar data={topAlbumsData.concat(newAlbumsData)} />
       <Hero />
       <div className="sectionWrapper">
         <Section

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as SearchIcon } from "../../assets/searchIcon.svg";
 import styles from "./Search.module.css";
+import MenuItem from "../MenuItem/MenuItem";
 
 const Search = ({ placeholder, data }) => {
   const [val, setVal] = useState(null);
@@ -29,7 +30,13 @@ const Search = ({ placeholder, data }) => {
           <SearchIcon />
         </button>
       </form>
-      {val ? <></> : null}
+      {val ? (
+        <div className={styles.menu}>
+          {data.map((item) => {
+            if (item.title.includes(val)) return <MenuItem album={item} />;
+          })}
+        </div>
+      ) : null}
     </>
   );
 };

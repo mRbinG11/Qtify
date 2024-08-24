@@ -5,11 +5,11 @@ import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 
-const NavBar = () => {
+const NavBar = ({ data }) => {
   return (
     <nav className={styles.navbar}>
       <Logo />
-      <Search />
+      <Search placeholder="Search a song" data={data} />
       <Button children="Give Feedback" />
     </nav>
   );
